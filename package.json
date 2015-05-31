@@ -9,7 +9,7 @@
     "build": "gulp build"
   },
   "keywords": [
-    "HAPI", "HapiJs", "API", "Node"
+    "HAPI", "HapiJs", "API", "Node", "es6"
   ],
   "author": "Kyle Davis (validkeys)",
   "license": "ISC",
