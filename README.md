@@ -1,8 +1,35 @@
-### Hapi Skeleton
+# Hapi Skeleton
 
 This is a skeleton application for getting up and running quickly with HAPIjs. Full supports ES6 (babel).
+---
 
-Folder Structure:
+Running
+---
+
+Server:
+```
+npm start or gulp serve
+```
+
+Build:
+```
+npm run build or gulp build
+```
+
+Test:
+To run all tests one time:
+
+```
+$ gulp test
+```
+
+To run in TDD mode (watches for file changes and re-runs tests)
+```
+$ gulp tdd
+```
+
+
+### Folder Structure:
 
 #### src/
 
