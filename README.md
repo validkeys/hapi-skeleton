@@ -1,6 +1,6 @@
 # Hapi Skeleton
 
-This is a skeleton application for getting up and running quickly with HAPIjs. Full supports ES6 (babel).
+This is a skeleton application for getting up and running quickly with HAPIjs. Fully supports ES6 (babel).
 ---
 
 Running
