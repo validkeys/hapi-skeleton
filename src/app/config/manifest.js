@@ -21,8 +21,8 @@ export default {
   plugins: {
     "good":                     good,
     "mrhorse":                  mrhorse,
+    "./initializers/database":  null,
     // "hapi-auth-jwt":            null,
-    // "./initializers/database":  null,
     // "./models/user":            null,
     "./pods/root":              null
   }
