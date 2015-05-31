@@ -4,8 +4,13 @@
   "description": "A skeleton for HAPIjs APIs",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "gulp test",
+    "start": "gulp serve",
+    "build": "gulp build"
   },
+  "keywords": [
+    "HAPI", "HapiJs", "API", "Node"
+  ],
   "author": "Kyle Davis (validkeys)",
   "license": "ISC",
   "dependencies": {
