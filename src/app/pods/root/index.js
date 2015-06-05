@@ -6,40 +6,26 @@ import pkg from './package.json';
 let root = "/";
 
 let index = (server, next) => {
+  server.route([
 
-  server.plugins.mrhorse.loadPolicies(server, {
-    policyDirectory:    Path.join(__dirname, '/policies'),
-    defaultApplyPoint: 'onPreHandler'
-  }, (err) => {
-
-    if (err) {
-      console.log(err);
-      return next(err);
-    }
-
-    server.route([
-
-      // GET
-      {
-        method: "GET",
-        path:   root,
-        config: {
-          handler: Controller.index,
-          bind:    Controller,
-          description:  "The root route",
-          notes:        "Simply returns a welcome message",
-          plugins: {
-            policies: PolicyService.withDefaults(server, [/* Custom Policies */])
-          }
+    // GET
+    {
+      method: "GET",
+      path:   root,
+      config: {
+        handler: Controller.index,
+        bind:    Controller,
+        description:  "The root route",
+        notes:        "Simply returns a welcome message",
+        plugins: {
+          policies: PolicyService.withDefaults(server, [/* Custom Policies */])
         }
       }
+    }
 
-    ]);
+  ]);
 
-    next();
-
-  });
-
+  next();
 };
 
 let register = (server, options, next) => {
