@@ -22,8 +22,8 @@ export default {
     "good":                     good,
     "mrhorse":                  mrhorse,
     "./initializers/database":  null,
-    // "hapi-auth-jwt":            null,
-    // "./models/user":            null,
+    "./models":                 null,
+    // "hapi-auth-jwt":         null,
     "./pods/root":              null
   }
 }
