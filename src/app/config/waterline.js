@@ -11,8 +11,7 @@ export default {
       password: '',
       host:     'localhost',
       port:     '5432',
-      database: 'presslydb',
-      migrate:  'safe'
+      database: 'presslydb'
     }
   },
   models: models
