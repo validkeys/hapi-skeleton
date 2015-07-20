@@ -32,7 +32,9 @@
     "mrhorse": "^1.1.0",
     "path": "^0.11.14",
     "rethinkdb": "^2.0.0-1",
-    "thinky": "^2.0.5"
+    "sails-postgresql": "^0.10.16",
+    "thinky": "^2.0.5",
+    "waterline-rethinkdb": "^0.5.0"
   },
   "devDependencies": {
     "babel": "^5.4.7",

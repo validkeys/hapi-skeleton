@@ -1,7 +1,11 @@
 export default {
 
   index: (req, reply) => {
-    reply({msg: "Welcome to the Skeleton API!"});
+    var Hubs = req.model.hubs;
+    Hubs.find()
+      .then((res) => {
+        reply({ hubs: res })
+      })
   }
 
 };
